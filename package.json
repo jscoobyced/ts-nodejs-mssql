@@ -1,0 +1,28 @@
+{
+  "name": "price-fix",
+  "version": "1.0.0",
+  "description": "Application to check Price Breakdown and Charges issues.",
+  "main": "index.js",
+  "author": "Cédric Rochefolle",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn run build && node ./dist/index.js",
+    "dev": "ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@types/mssql": "^9.1.5",
+    "@types/node": "^20.14.8",
+    "eslint": "9.x",
+    "globals": "^15.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.13.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mssql": "^11.0.0"
+  }
+}
